@@ -5,7 +5,7 @@ variable "resource_group_name" {
 
 variable "location" {
   description = "Azure region"
-  default     = "Central India"
+  default     = "East Asia"
 }
 
 variable "storage_account_name" {
