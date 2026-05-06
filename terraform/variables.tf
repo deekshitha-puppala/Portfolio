@@ -8,17 +8,27 @@ variable "location" {
   default     = "Central India"
 }
 
+variable "storage_account_name" {
+  description = "Name of storage account for terraform state"
+  default     = "tfstateportfolio"
+}
+
 variable "acr_name" {
   description = "Name of Azure Container Registry"
-  default     = "portfolioterraformacr"
+  default     = "weappACR"
 }
 
 variable "app_service_plan_name" {
   description = "Name of App Service Plan"
-  default     = "portfolio-terraform-plan"
+  default     = "ASP-devopsazure-87e7"
 }
 
 variable "web_app_name" {
   description = "Name of Web App"
-  default     = "portfolio-terraform-webapp"
+  default     = "deekshitha-webappresource"
+}
+
+variable "docker_image" {
+  description = "Docker image name"
+  default     = "my-webapp"
 }
